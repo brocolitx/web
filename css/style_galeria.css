@@ -1,0 +1,320 @@
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+
+
+/*                                                   BODY                                                       */
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+body{
+  background-color: #281a4d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+
+
+/*                                                   HEADER                                                     */
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+
+header{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+
+
+/*                                                   MAIN                                                       */
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+main{
+
+  width: 90%;
+  max-width: 575px;
+  margin: auto;
+}
+
+  
+
+.gallery-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ hr{
+  margin-bottom: 20px;
+  width:170px;
+  height: 20%;
+  color: #3e1d41;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.gallery-item {
+  position: relative;
+  width: calc(33.33% - 10px);
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  color:#524770;
+  box-shadow: black;
+  box-sizing: 20px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.2);
+}
+
+.gallery-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.gallery-modal-close {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.gallery-modal-close:hover {
+  color: #bbb;
+}
+
+.gallery-modal-content {
+  display: block;
+  margin: 10% auto;
+  width: 80%;
+  height: auto;
+}
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+
+
+/*                                                   FOOTER                                                    */
+
+/*============================================================================================================= */
+/*============================================================================================================= */
+/*Estilos para el footer*/
+.footer {
+  background-color: #524770;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 0;
+  top: 30px;
+  position: relative;
+}
+/*Estilos para el contenido dentro del footer*/
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+/*Estilos para los iconos*/
+.arrow-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.arrow-icon i {
+  font-size: 24px;
+  color: #e0a6fe;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*Estilos para la animación de los iconos*/
+.arrow-icon i:hover {
+  animation: bounce 0.5s ease-out;
+  transform: translateY(-10px);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/*Estilos para las imágenes de los iconos*/
+.arrow-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 12px;
+  right: 450px;
+
+}
+
+.social-icons a {
+  display: block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+
+/* Estilo para el recuadro del nav */
+.container {
+  background-color: #403169;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:white;
+  display: inline-block;
+  bottom: 15px;
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c8bcc2;
+  font-weight: bold;
+}
+
+/* Estilo para el enlace activo */
+nav a.active {
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+.box {
+  background-color: #534774;
+  box-shadow: #3b3352;
+  box-sizing: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  width: 340px;
+  height: 160px;
+  position: relative;
+  right: 50px;
+  max-width: 600px; /* ajustar según tu necesidad */
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.box h2 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.box p {
+  margin-bottom: 5px;
+}
+
+.box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box li {
+  margin-bottom: 3px;
+}
+
+.box li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.box li a:hover {
+  color: #666;
+}
